@@ -1,154 +1,565 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    	<!-- Meta Tags -->
-    	<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<meta name="author" content="Vasco Santos">
-    	<meta name="description" content="">
-    	<meta name="keywords" content="vasco, vasco santos, portfolio, universidade aveiro, ua, engenharia de computadores e telemática, ect, web">
-
-    	<title>Vasco Santos Website</title>
-
-    	<!-- Bootstrap -->
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<script src="css/bootstrap.min.js"></script>
-    	<!-- jquery-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    	<!-- Links to stylesheet.css and script.js -->
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-        <script type="text/javascript" src="script.js"></script>
-
-	</head>
+<html lang="en">
     
-	<body data-spy="scroll" data-target="#menu">
+    <head>
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div id = "bar" class="navbar-header">
-				  <div class="navbar-brand">
-					<img id ="circleImage" src="images/pict.jpg"/>
-			      </div>
-		        </div>
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Vasco Santos">
+        <meta name="description" content="">
+        <meta name="keywords" content="vasco, vasco santos, portfolio, resume, universidade aveiro, ua, engenharia de computadores e telemática, ect, web">
 
-		        <div id="menu" class="collapse navbar-collapse navbar-ex1-collapse">
-		          <ul class="nav navbar-nav navbar-right">
-		              <li id="navigate-home" class="active"><a href="#home">Home</a></li>
-		              <li id="navigate-studies"><a href="#studies">Studies</a></li>
-		              <li id="navigate-projects"><a href="#projects">Projects</a></li>
-		              <li id="navigate-about"><a href="#about">About</a></li>
-		          </ul>
-		        </div>
-			</div>	
-		</nav>
+        <title>Vasco Santos Website</title>
 
-	    <!-- Home -->
-	    <a class="anchor" id="home"></a>
-	    <div class="home background-home">
-	        <div class="title">Welcome!</div>
-	        <div class="subtitle">My name is <strong>Vasco Santos</strong>, I'm 21 years old and I'm studying Computer and Telematics Engineering.</div>
-	    </div>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-	    <!-- Studies -->
-	    <a class="anchor" id="studies"></a>
-	    <div class="area">
-	        <div class="container">
+    </head>
 
-	            <div class="row text-center">
-	                <h1 class="dark">Studies</h1>
-	            </div>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-	            <div class="row">
-			        <div class="col-md-4">
-			          <h2>Escola Secundária Dr. Solano de Abreu, Abrantes</h2>
-			          <p id="desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			        </div>
-			        <div class="col-md-4">
-			          <h2>Instituto de Linguas do Centro, Abrantes</h2>
-			          <p id="desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			        </div>
-			        <div class="col-md-4">
-			          <h2>Universidade de Aveiro, DETI</h2>
-			          <p id="desc">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-			    	</div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Left Side -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <i class="fa fa-play-circle"></i> 
+                        HOME
+                        <!-- Image UP -->
+                    </a>
+                </div>
+                <!-- Right Side -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden"> <a href="#page-top"></a></li>
+                        <li> <a class="page-scroll" href="#profile">Profile</a> </li>
+                        <li> <a class="page-scroll" href="#focus">Focus</a> </li>
+                        <li> <a class="page-scroll" href="#experience">Experience</a> </li>
+                        <li> <a class="page-scroll" href="#abilities">Abilities</a> </li>
+                        <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-	        	</div>    
-	    	</div>
-	    </div>
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-0">
+                            <h1 class="brand-heading">Welcome</h1>
+                            <p class="intro-text">
+                                My name is <strong>Vasco Santos</strong>!<br>
+                                I'm 21 years old and I'm studying Computer and Telematics Engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-	    <!-- Projects -->
-	    <a class="anchor" id="projects"></a>
-	    <div class="area background-gray">
-	        <div class="container">
+        <!-- Profile Section -->
+        <section id="profile" class="container content-section text-center">
+            <h2>Profile</h2>
+            <p>I'm a Software Developer</p>
+            
+            <div class="row">
+                <div class="col-md-5 col-lg-offset-1 text-left">
+                    <h4>Details</h4>
+                    <p>
+                        <strong>Name:</strong> Vasco Santos<br>
+                        <strong>Age:</strong> 21 years<br>
+                        <strong>Born:</strong> Abrantes, Portugal<br>
+                        <strong>Location:</strong> Aveiro, Portugal</p>
+                </div>
+                <div class="col-md-5 col-lg-offset-1 text-left">
+                    <img id ="circleImage" src="img/pict.jpg"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <hr class="small">
+                    <h4>The Story Behind</h4>
+                    <p>Hello everyone, for those of you that I haven't met yet, I'm a software developer currently living in Aveiro, Portugal. For the past several years, I've been studying Computer and Telematics Engineering and I'm actually in the master's degree.</p>
+                    <p>I like to spend my free time following sports, travelling, playing video games (Football usually), watching movies and tv shows, listening to music and learning new things online. </p>
+                </div>
+            </div>
+        </section>
 
-	            <div class="row text-center">
-	                <h1 class="dark">Projects</h1>
-	            </div>
+        <!-- Focus Section -->
+        <div class ="bg-primary">
+            <section id="focus" class="container content-section text-center">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Focus</h2>
+                        <hr class="small">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img id="iconImage" src="img/web.png"/>
+                        <span>
+                            <h5><strong>Web Developing</strong></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img id="iconImage" src="img/security.png"/>
+                        <span>
+                            <h5><strong>Security</strong></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img id="iconImage" src="img/cloud.png"/>
+                        <span>
+                            <h5><strong>Cloud Computing</strong></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img id="iconImage" src="img/bigData.png"/>
+                        <span>
+                            <h5><strong>Big Data</strong></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
 
-	            <div class="row">
-			        <div class="col-md-4">
-			          <h2>Project1</h2>
-			          <p id="desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			        </div>
-			        <div class="col-md-4">
-			          <h2>Project2</h2>
-			          <p id="desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			        </div>
-			        <div class="col-md-4">
-			          <h2>Project3</h2>
-			          <p id="desc">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-			    	</div>
-	        	</div>    
-	    	</div>
-	    </div>
+        <!-- Experience Section -->
+        <section id="experience" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Experiences</h2>
+                    <hr class="small">
+                </div>
+            </div>
+            <!-- 
+            <h3>Careers</h3>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <hr class="small">
+                </div>
+            </div>
+            -->
+            <h3>Educations</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><a href="http://www.ua.pt/">Aveiro University</a></h4>
+                    <p> Sep 2011 - Current</p>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Integrated Masters - Computers and Telematic Engineering</strong><br>
+                        <span>
+                            Provides a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role in the industrial sector and are the main dynamo of development in all advanced economies. </span>
+                        <span>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                        Aveiro</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><a href="http://ae1abrantes.esdrsolanoabreu.pt/">Escola Secundária Dr. Solano de Abreu</a></h4>
+                    <p> Sep 2005 - Jul 2011</p>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Scientific and humanistic course of Sciences and Technologies</strong><br>
+                        <span>
+                        Provides a set of knowledge and skills that will help to observe, organize and understand the science and technology, as well as recognize and relate its implications in contemporary society.
+                        </span>
+                        <span>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                        Abrantes</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><a href="http://www.ilcourhouse.com/">ILC Our House</a></h4>
+                    <p> Sep 2003 - Jul 2010</p>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>English Courses</strong><br>
+                        <span>
+                            Languages school member of the British Council Exams Partnership Programme, recognized as official center for examinations at the University of Cambridge.
+                        </span>
+                        <span>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                        Abrantes</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <hr class="small">
+                </div>
+            </div>
+            <h3>Extracurricular</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Núcleo de Estudantes de Engenharia de Computadores e Telemática da AAUAv</h4>
+                    <p> Jan 2015 - Current</p>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <strong>Pedagogy Section</strong><br>
+                        <span>
+                            Member of pedagogy section of the course students' union. The main objectives of this section are organizing activities aimed at complementing the education of students and prepare them for the job market.
+                        </span>
+                        <span>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                        Aveiro</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Others</h4>
+                    <p> Sep 2005 - Aug 2010</p>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <span>
+                            Member of the Scouts group of Chainça.<br>
+                            Football player at local team.
+                        </span>
+                        <span>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                        Abrantes</span>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-	    <!-- About -->
-	    <a class="anchor" id="about"></a>
-	    <div class="area">
-	        <div class="container">
+        <!-- Abilities Section -->
+        <section id="abilities" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Abilities</h2>
+                    <hr class="small">
+                    <!--
+                    CERTIFICATES AND AWARDS
+                    -->
+                </div>
+            </div>
+            <h3>Skills</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <span class="ability-title">Java</span>
+                            <span class="ability-score">                                                 
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">C#</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">JSON</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">XML</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTTP</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">SQL</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML(5) and CSS(3)</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <span class="ability-title">Python</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">CherryPy</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Javascript</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">jQuery</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">AngularJS</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Node.js</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Express.js</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <hr class="small">
+                </div>
+            </div>
+            <h3>Languages</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li style="list-style-type: none;">
+                            <span class="ability-title">Portuguese(Mother tongue)</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>                                        
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">English (Daily use)</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li style="list-style-type: none;">
+                            <span class="ability-title">Spanish (Survivable)</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>                                        
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <hr class="small">
+                </div>
+            </div>
+            <h3>Tools</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li style="list-style-type: none;">
+                            <span class="ability-title">CSS(3)</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>                                        
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML(5)</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li style="list-style-type: none;">
+                            <span class="ability-title">CSS(3)</span>
+                            <span class="ability-score">             
+                                <span class="glyphicon glyphicon-star filled"></span>                                        
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML(5)</span>
+                            <span class="ability-score">
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                                <span class="glyphicon glyphicon-star filled"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-	            <div class="row text-center">
-	                <h1 class="dark">About</h1>
-	            </div>
+        <!-- Contact Section -->
+        <section id="contact" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact</h2>
+                    <hr class="small">
 
-	            <div class="about1">
-	                My name is <strong>Vasco Santos</strong> and I'm a Portuguese student.
-	            </div>
-	                    
-	            <div class="about2">
-	                I'm currently studying Computer and Telematics Engineering</a> in the <a href="http://www.ua.pt" target="_blank">University of Aveiro (UA)</a>.
-	            </div>
+                    <!--
+                    <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                    <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                    </p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a href="https://www.facebook.com/vasco.santos.107" target="_blank">
+                                <span class="icon icon-facebook"></span>
+                                https://www.facebook.com/vasco.santos.107        </a>
+                        </li>
+                        <li>
+                            <a href="pt.linkedin.com/pub/vasco-santos/61/536/555/pt" target="_blank">
+                                <span class="icon icon-linkedin"></span>
+                                pt.linkedin.com/pub/vasco-santos/61/536/555/pt   </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon icon-skype"></span>
+                                vasco.santos-ua               </a>
+                        </li>
+                        <li>
+                            <a href="mailto:tp.au@sotnas.ocsav">
+                                <span class="icon icon-email"></span>
+                                <span style="unicode-bidi:bidi-override; direction: rtl;">
+                                    tp.au@sotnas.ocsav</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-	            <!-- Contact -->
-	            <div class="row text-center">
-	                    <div class="contact-title">Contact me:</div>
-	            </div>
-	            <div class="contact row text-center">
-	                <a class="contact-big" href="mailto:me@davidcampos.org">
-	                    <div><i class="icon-envelope"></i></div>
-	                    <div>vasco.santos@ua.pt</div>
-	                </a>
-	                <a class="contact-big" style="cursor:default;">
-	                    <div><i class="icon-skype"></i></div>
-	                    <div>vasco.santos-ua</div>
-	                </a>
-	            </div>
+        <!-- Footer -->
+        <footer class="background-gray text-center">
+            <div class="contaier">
+                <p>&copy; Vasco Santos 2015</p>
+            </div>
+        </footer>
 
-	            <!-- Social Networks-->
-	        </div>
-	    </div>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/script.js"></script>
 
-	    <footer class="background-gray text-center">
-	    	<div class="contaier">
-	    		<p>&copy; Vasco Santos 2014</p>
-	    	</div>
-	    </footer>
-
-	    <!-- Bootstrap CSS -->
-
-	    <script type="text/javascript" src="script.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	</body>
+    </body>
 </html>
