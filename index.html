@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
 
         <!-- Meta Tags -->
@@ -18,548 +18,290 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
+
         <!-- Custom Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
     </head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <body>
 
         <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Left Side -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i> 
-                        HOME
-                        <!-- Image UP -->
-                    </a>
-                </div>
-                <!-- Right Side -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="hidden"> <a href="#page-top"></a></li>
-                        <li> <a class="page-scroll" href="#profile">Profile</a> </li>
-                        <li> <a class="page-scroll" href="#focus">Focus</a> </li>
-                        <li> <a class="page-scroll" href="#experience">Experience</a> </li>
-                        <li> <a class="page-scroll" href="#abilities">Abilities</a> </li>
-                        <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-                    </ul>
-                </div>
-            </div>
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="#top">Start Bootstrap</a>
+                </li>
+                <li>
+                    <a href="#top">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </nav>
 
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-md-offset-0">
-                            <h1 class="brand-heading">Welcome</h1>
-                            <p class="intro-text">
-                                My name is <strong>Vasco Santos</strong>!<br>
-                                I'm 21 years old and I'm studying Computer and Telematics Engineering.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Header -->
+        <header id="top" class="header">
+            <div class="text-vertical-center">
+                <h1>Start Bootstrap</h1>
+                <h3>Free Bootstrap Themes &amp; Templates</h3>
+                <br>
+                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
             </div>
         </header>
 
-        <!-- Profile Section -->
-        <section id="profile" class="container content-section text-center">
-            <h2>Profile</h2>
-            <p>I'm a Software Developer</p>
-            
-            <div class="row">
-                <div class="col-md-5 col-lg-offset-1 text-left">
-                    <h4>Details</h4>
-                    <p>
-                        <strong>Name:</strong> Vasco Santos<br>
-                        <strong>Age:</strong> 21 years<br>
-                        <strong>Born:</strong> Abrantes, Portugal<br>
-                        <strong>Location:</strong> Aveiro, Portugal</p>
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                        <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    </div>
                 </div>
-                <div class="col-md-5 col-lg-offset-1 text-left">
-                    <img id ="circleImage" src="img/pict.jpg"/>
-                </div>
+                <!-- /.row -->
             </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <hr class="small">
-                    <h4>The Story Behind</h4>
-                    <p>Hello everyone, for those of you that I haven't met yet, I'm a software developer currently living in Aveiro, Portugal. For the past several years, I've been studying Computer and Telematics Engineering and I'm actually in the master's degree.</p>
-                    <p>I like to spend my free time following sports, travelling, playing video games (Football usually), watching movies and tv shows, listening to music and learning new things online. </p>
-                </div>
-            </div>
+            <!-- /.container -->
         </section>
 
-        <!-- Focus Section -->
-        <div class ="bg-primary">
-            <section id="focus" class="container content-section text-center">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Focus</h2>
+        <!-- Services -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <section id="services" class="services bg-primary">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Our Services</h2>
                         <hr class="small">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Service Name</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Service Name</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Service Name</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Service Name</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
                     </div>
+                    <!-- /.col-lg-10 -->
                 </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Callout -->
+        <aside class="callout">
+            <div class="text-vertical-center">
+                <h1>Vertically Centered Text</h1>
+            </div>
+        </aside>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/web.png"/>
-                        <span>
-                            <h5><strong>Web Developing</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Our Work</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                        <a href="#" class="btn btn-dark">View More Items</a>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/security.png"/>
-                        <span>
-                            <h5><strong>Security</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/cloud.png"/>
-                        <span>
-                            <h5><strong>Cloud Computing</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/bigData.png"/>
-                        <span>
-                            <h5><strong>Big Data</strong></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
-                    </div>
+                    <!-- /.col-lg-10 -->
                 </div>
-            </section>
-        </div>
-        
-
-        <!-- Experience Section -->
-        <section id="experience" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Experiences</h2>
-                    <hr class="small">
-                </div>
+                <!-- /.row -->
             </div>
-            <!-- 
-            <h3>Careers</h3>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            -->
-            <h3>Educations</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4><a href="http://www.ua.pt/">Aveiro University</a></h4>
-                    <p> Sep 2011 - Current</p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>Integrated Masters - Computers and Telematic Engineering</strong><br>
-                        <span>
-                            Provides a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role in the industrial sector and are the main dynamo of development in all advanced economies. </span>
-                        <span>
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                        Aveiro</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4><a href="http://ae1abrantes.esdrsolanoabreu.pt/">Escola Secundária Dr. Solano de Abreu</a></h4>
-                    <p> Sep 2005 - Jul 2011</p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>Scientific and humanistic course of Sciences and Technologies</strong><br>
-                        <span>
-                        Provides a set of knowledge and skills that will help to observe, organize and understand the science and technology, as well as recognize and relate its implications in contemporary society.
-                        </span>
-                        <span>
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                        Abrantes</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4><a href="http://www.ilcourhouse.com/">ILC Our House</a></h4>
-                    <p> Sep 2003 - Jul 2010</p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>English Courses</strong><br>
-                        <span>
-                            Languages school member of the British Council Exams Partnership Programme, recognized as official center for examinations at the University of Cambridge.
-                        </span>
-                        <span>
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                        Abrantes</span>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            <h3>Extracurricular</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Núcleo de Estudantes de Engenharia de Computadores e Telemática da AAUAv</h4>
-                    <p> Jan 2015 - Current</p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <strong>Pedagogy Section</strong><br>
-                        <span>
-                            Member of pedagogy section of the course students' union. The main objectives of this section are organizing activities aimed at complementing the education of students and prepare them for the job market.
-                        </span>
-                        <span>
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                        Aveiro</span>
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Others</h4>
-                    <p> Sep 2005 - Aug 2010</p>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        <span>
-                            Member of the Scouts group of Chainça.<br>
-                            Football player at local team.
-                        </span>
-                        <span>
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                        Abrantes</span>
-                    </p>
-                </div>
-            </div>
+            <!-- /.container -->
         </section>
 
-        <!-- Abilities Section -->
-        <section id="abilities" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Abilities</h2>
-                    <hr class="small">
-                    <!--
-                    CERTIFICATES AND AWARDS
-                    -->
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>The buttons below are impossible to resist.</h3>
+                        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    </div>
                 </div>
             </div>
-            <h3>Skills</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <span class="ability-title">Java</span>
-                            <span class="ability-score">                                                 
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">C#</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">JSON</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">XML</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">HTTP</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">SQL</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">HTML(5) and CSS(3)</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <span class="ability-title">Python</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">CherryPy</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">Javascript</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">jQuery</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">AngularJS</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">Node.js</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">Express.js</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            <h3>Languages</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="list-style-type: none;">
-                            <span class="ability-title">Portuguese(Mother tongue)</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>                                        
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">English (Daily use)</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="list-style-type: none;">
-                            <span class="ability-title">Spanish (Survivable)</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>                                        
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            <h3>Tools</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="list-style-type: none;">
-                            <span class="ability-title">CSS(3)</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>                                        
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">HTML(5)</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="list-style-type: none;">
-                            <span class="ability-title">CSS(3)</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star filled"></span>                                        
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="ability-title">HTML(5)</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </aside>
 
-        <!-- Contact Section -->
-        <section id="contact" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Contact</h2>
-                    <hr class="small">
-
-                    <!--
-                    <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                    <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                    </p>
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                        </li>
-                    </ul>-->
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <a href="https://www.facebook.com/vasco.santos.107" target="_blank">
-                                <span class="icon icon-facebook"></span>
-                                https://www.facebook.com/vasco.santos.107        </a>
-                        </li>
-                        <li>
-                            <a href="pt.linkedin.com/pub/vasco-santos/61/536/555/pt" target="_blank">
-                                <span class="icon icon-linkedin"></span>
-                                pt.linkedin.com/pub/vasco-santos/61/536/555/pt   </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <a href="javascript:void(0);">
-                                <span class="icon icon-skype"></span>
-                                vasco.santos-ua               </a>
-                        </li>
-                        <li>
-                            <a href="mailto:tp.au@sotnas.ocsav">
-                                <span class="icon icon-email"></span>
-                                <span style="unicode-bidi:bidi-override; direction: rtl;">
-                                    tp.au@sotnas.ocsav</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Map -->
+        <section id="contact" class="map">
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small>
+                <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+            </small>
+            </iframe>
         </section>
 
         <!-- Footer -->
-        <footer class="background-gray text-center">
-            <div class="contaier">
-                <p>&copy; Vasco Santos 2015</p>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h4><strong>Start Bootstrap</strong>
+                        </h4>
+                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            </li>
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    </div>
+                </div>
             </div>
         </footer>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
+
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
+
         <!-- Custom Theme JavaScript -->
-        <script src="js/script.js"></script>
+        <script>
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+
+        // Scrolls to the selected menu item on the page
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
 
     </body>
+
 </html>
