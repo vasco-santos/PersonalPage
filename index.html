@@ -1,752 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-
-        <!-- Meta Tags -->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Vasco Santos">
         <meta name="description" content="">
         <meta name="keywords" content="vasco, vasco santos, portfolio, resume, universidade aveiro, ua, engenharia de computadores e telemática, ect, web">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-        <title>Vasco Santos Website</title>
+    <title>Vasco Santos Resume</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    </head>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Custom style -->
+    <link href="assets/css/my.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="assets/js/theme.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script src="assets/js/Chart.js"></script>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Left Side -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i> 
-                        HOME
-                        <!-- Image UP -->
-                    </a>
-                </div>
-                <!-- Right Side -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="hidden"> <a href="#page-top"></a></li>
-                        <li> <a class="page-scroll" href="#profile">Profile</a> </li>
-                        <li> <a class="page-scroll" href="#focus">Focus</a> </li>
-                        <li> <a class="page-scroll" href="#experience">Experience</a> </li>
-                        <li> <a class="page-scroll" href="#abilities">Abilities</a> </li>
-                        <!--<li> <a class="page-scroll" href="#projects">Projects</a> </li>-->
-                        <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <script src="assets/mygraphs.js"></script>
 
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-md-offset-0">
-                            <h1 class="brand-heading">Welcome</h1>
-                            <p class="intro-text">
-                                My name is <strong>Vasco Santos</strong>!<br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+  </head>
 
-        <!-- Profile Section -->
-        <section id="profile" class="container content-section text-center">
-            <h2 class="fontGreenBlue">Profile</h2>
-            <!--<p>I'm a Software Developer</p>-->            
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
+
+	<div id="section-topbar">
+		<div id="topbar-inner">
+			<div class="container">
+				<div class="row">
+					<div class="dropdown">
+						<ul id="nav" class="nav">
+							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+						</ul><!--/ uL#nav -->
+					</div><!-- /.dropdown -->
+
+					<div class="clear"></div>
+				</div><!--/.row -->
+			</div><!--/.container -->
+
+			<div class="clear"></div>
+		</div><!--/ #topbar-inner -->
+	</div><!--/ #section-topbar -->
+	
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-12">
+					<h1 style="text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;">Vasco Santos</h1>
+					<h3 style="text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;">Software Developer | santos.vasco10@gmail.com</h3>
+				</div><!--/.col-lg-12 -->
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/.#headerwrap -->
+	
+
+	<section id="about" name="about"></section>
+	<div id="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>ABOUT</h5>
+				</div>
+				<div class="col-lg-7">
+					<p class="justify">Hello everyone, for those of you that I have not met yet, I am a software developer currently living in Aveiro, Portugal. I was born in 1993 in Abrantes, a small city in central Portugal.</p>
+                    <p class="justify">For the past several years, I have been studying Computers and Telematics Engineering and I am actually finishing my master's degree dissertation. I am a Technology enthusiast, who is always looking forward to learn new stuff. In addition, I consider myself to be an organized, perfectionist and hard working person, with interpersonal skills for working in a multi-cultural team. My ambition is to become a great full-stack developer, capable of using the most adequate technologies for each challenge.</p>
+                    <p class="justify">I like to spend my free time traveling, as well as meet new people and cultures. Moreover, I am a big football fan and I like watching movies and tv shows, as well as listening to music.</p>
+				</div>
+				<div class="col-lg-2">
+					<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+				</div>
+			</div>
+            
             <div class="row">
-                <div class="col-md-5 col-lg-offset-1 text-left">
-                    <h4 class="fontGreenBlue">Details</h4>
-                    <p>
-                        <strong>Name:</strong> Vasco Santos<br>
-                        <strong>Age:</strong> 22 years<br>
-                        <strong>Born:</strong> Abrantes, Portugal<br>
-                        <strong>Location:</strong> Aveiro, Portugal<br>
-                        <strong>Status:</strong> Master's Degree Student</p>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                    <br>
+                    <h5>FOCUS</h5>
                 </div>
-                <div class="col-md-5 col-lg-offset-1 text-left">
-                    <img id ="circleImage" src="img/pict.jpg"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <hr class="small">
-                    <h4 class="fontGreenBlue">The Story Behind</h4>
-                    <p>Hello everyone, for those of you that I haven't met yet, I'm a software developer currently living in Aveiro, Portugal. For the past several years, I've been studying Computer and Telematics Engineering and I'm actually finishing my master's degree.</p>
-                    <p>I like to spend my free time travelling, following sports, playing video games (Football usually), watching movies and tv shows, listening to music and learning online. </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Focus Section -->
-        <div class ="background-greenBlue">
-            <section id="focus" class="container content-section text-center">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Focus</h2>
-                        <hr class="small">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/web.png"/>
-                        <span>
-                            <h5><strong>Web Developing</strong></h5>
-                        </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/security.png"/>
+              
+                <div style="margin-left: -4%" class="col-lg-2 col-md-2 col-sm-2 centered">
+                    <br>
+                    <img id="iconImage" src="assets/img/security.png"/>
                         <span>
                             <h5><strong>Security</strong></h5>
-                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
                         </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/cloud.png"/>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 centered">
+                    <br>
+                    <img id="iconImage" src="assets/img/distsys.png"/>
                         <span>
-                            <h5><strong>Network Programming</strong></h5>
-                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+                            <h5><strong>Distributed Systems</strong></h5>
                         </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img id="iconImage" src="img/bigData.png"/>
+                </div>
+                
+                <div class="col-lg-2 col-md-2 col-sm-2 centered">
+                    <br>
+                    <img id="iconImage" src="assets/img/web.png"/>
                         <span>
-                            <h5><strong>Big Data</strong></h5>
-                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+                            <h5><strong>Web Development</strong></h5>
                         </span>
-                    </div>
                 </div>
-            </section>
+                <div class="col-lg-2 col-md-2 col-sm-2 centered">
+                    <br>
+                    <img id="iconImage" src="assets/img/iot.png"/>
+                        <span>
+                            <h5><strong>Internet of Things</strong></h5>
+                        </span>
+                </div>
+            </div>
+		</div><!--/.container -->
+	</div><!--/ #intro -->
+
+	<section id="resume" name="resume"></section>
+	<!--EDUCATION DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EDUCATION</h5>
+				</div>
+				<div class="col-lg-6">
+					<p class="justify"><t>Master's degree in Computers and Telematics Engineering</t><br/>
+						Aveiro University (5 Years Course) <br/> <br>
+						Provides a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role in the industrial sector and are the main dynamo of development in all advanced economies. <br/>
+					   <br>
+                       Programming, Software Engineering, Distributed Systems, Security, Information Retrieval, DevOps, Internet of Things and Computer Networks.
+                    </p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>SEPTEMBER 2011 - CURRENT</sm><br/>
+					<imp><sm>IN PROGRESS</sm></imp>
+					</p>
+				</div>	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+	
+	
+	<!--WORK DESCRIPTION -->
+    <!--
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EXPERIENCE</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Front-end Developer</t><br/>
+						Black Tie Corp. <br/>
+					</p>
+					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>AUGUST 2012 - CURRENT</sm></p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Web Designer - Intern</t><br/>
+						Onassis Ltd. <br/>
+					</p>
+					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2010 - JULY 2012</sm></p>
+				</div>
+		</div>
+		<br>
+		<hr>
+	</div><!--/.container -->
+
+
+	<!--AWARDS DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EXTRACURRICULAR</h5>
+				</div>
+	
+				<div class="col-lg-6">
+					<p class="justify"><t>Pedagogy Section</t><br/>
+						Nucleo de Estudantes de Engenharia de Computadores e Telemática
+					</p>
+					<p class="justify">Member of the pedagogy section of the course students' association. The main objective of this section consists of organizing activities aimed at complementing the students' education, as well as prepare them for the job market.
+                    </p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JANUARY 2015 - DECEMBER 2015</sm></p>
+				</div>
+		
+		</div><!--/.row -->
+		<br>
+        <hr>
+	</div><!--/.container -->
+    
+    <!--AWARDS DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>AWARDS</h5>
+				</div>
+	
+				<div class="col-lg-6">
+					<p><t>Member of the Semifinalist Team</t><br/>
+						OpenMind Esegur Prize for Inovation in the Security Field
+					</p>
+					<p class="justify">Proposed an alert and confirmation service, which adds a second security factor to the authentication in existing external services, with single factor authentication. This service provides anonymity to the users, as well as configurable levels of security for each external service bound. Therefore, the users may confirm their identity through a Smartphone or an Arduino, as well as detect unauthorized authentication attempts.
+                        <br>
+                        Team advised by Professor André Zuquete.                        
+                    </p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>APRIL 2015 - SEPTEMBER 2015</sm></p>
+				</div>
+		
+		</div><!--/.row -->
+		<br>
+	</div><!--/.container -->
+	
+	
+	<!--SKILLS DESCRIPTION -->
+	<div id="skillswrap">
+		<div class="container">
+			
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>PROGRAMMING LANGUAGES</h5>
+                </div>
+                <div class="col-lg-8 centered">
+                    <div id="radar" style="margin: 0 auto"></div>
+                </div>
+			</div>
+            
+            <div class="row">
+                <br> <br>
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>FRAMEWORKS / TECHNOLOGIES</h5>
+                </div>
+                
+                <div class="col-lg-2 centered">
+                    <canvas id="nodejs" height="130" width="130"></canvas>
+                    <p>NodeJS</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="angularjs" height="130" width="130"></canvas>
+                    <p>AngularJS</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="reactjs" height="130" width="130"></canvas>
+                    <p>React.js</p>
+                    <br>
+                </div>
+                
+                <div class="col-lg-2 centered">
+                    <canvas id="jquery" height="130" width="130"></canvas>
+                    <p>jQuery</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 col-lg-offset-3 centered">
+                    <canvas id="twisted" height="130" width="130"></canvas>
+                    <p>Twisted</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="django" height="130" width="130"></canvas>
+                    <p>Django</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="cherryPy" height="130" width="130"></canvas>
+                    <p>cherryPy</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="flask" height="130" width="130"></canvas>
+                    <p>Flask</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 col-lg-offset-3 centered">
+                    <canvas id="wpf" height="130" width="130"></canvas>
+                    <p>WPF</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="aspnet" height="130" width="130"></canvas>
+                    <p>ASP.NET</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="java2ee" height="130" width="130"></canvas>
+                    <p>Java2EE</p>
+                    <br>
+                </div>
+                <div class="col-lg-2 centered">
+                    <canvas id="solr" height="130" width="130"></canvas>
+                    <p>Apache Solr</p>
+                    <br>
+                    <script>
+                        </script>
+                </div>
+			</div><!--/.row -->
+            
+            <div class="row">
+                <br> <br>
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>DATABASES</h5>
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>MongoDB</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>InfluxDB</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 col-lg-offset-3 centered">
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>PostgreSQL</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>Redis</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 col-lg-offset-3 centered">
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>SQL Server</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>RethinkDB</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <br> <br>
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>TOOLS</h5>
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>Linux</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="75%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>OpenStack</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">75%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 col-lg-offset-3 centered">
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>Git</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>Ansible</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 col-lg-offset-3 centered">
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>Vagrant</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+                <div class="col-lg-4 centered">
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #1abc9c;"><span>Chef</span></div>
+                        <div class="skillbar-bar" style="background: #1abc9c;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+            </div>
+                        
+		</div><!--/.container -->
+	</div><!--/ #skillswrap -->
+
+	<section id="work" name="work"></section>
+	<!--PORTFOLIO DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>PORTFOLIO</h5>
+            </div>
+            <div>
+                <div class="col-lg-4">
+                    <p><img class="img-responsive" src="assets/img/wip.jpg" alt=""></p>
+                </div>
+                <div class="col-lg-5">
+                        <p>Master's Degree Thesis - Secure Decentralized IoT Infrastructure</p>
+                    <p class="justify"><more>Aims to showcase an alternative concept for IoT Infrastructures, which can help in designing a fault-tolerant and scalable infrastructure. Its focus is to enhance the traditional centralized architecture, usually composed by a unique business model, into a decentralized model featuring multiple of those. The main objective consists of building a dynamic and self-configurable infrastructure on top of a structured Peer-to-Peer network. Moreover, a set of protocols must be provided for embracing the most varied devices, as well as data access, streaming and persistence. Thus, it is essential to have mechanisms that guarantee the privacy and security of the information.<br/>
+                    </p>
+                </div>
+            </div>
+            <div class="portCenter">
+                <div class="col-lg-4 col-lg-offset-3">
+                    <p><img class="img-responsive" src="assets/img/vStudy2.png" alt=""></p>
+                </div>
+                <div class="col-lg-5">
+                    <p>Services Engineering Group Project - Virtual Study Room</p>
+                <p class="justify"><more>This project consists of an online adaptative study environment for students, The users could easily find a table, where other people are studying the same topics, as well as found valuable resources. It was developed a Real-time web application based on a Service Oriented Architecture. Its main features are instant messaging, VoIP, Screen Sharing and File-sharing. More info: <a href="https://github.com/vasco-santos/vStudy_Composer"><i class="icon-github"></i></a><br/><br/>
+                </p>
+                </div>
+                </div>
+            <div class="portCenter">
+                <div class="col-lg-4 col-lg-offset-3">
+                    <p><img class="img-responsive" src="assets/img/youInteract.png" alt=""></p>
+                </div>
+                <div class="col-lg-5">
+                        <p>Informatics Engineering Graduation Project - YouInteract</p>
+                    <p class="justify"><more>This project resides in a system that could, simultaneously, entertain and be useful to a common person that is passing by the hall of a university department, tourist office, hospital, among others. It was developed an interacting platform application, based on a Plugin Architecture, in order to allow other students to develop and deploy applications easily as plugins. The users interact with the platform through a Microsoft Kinect. This platform is currently running in Eletronics, Telecommunication and Informatics Department of Aveiro Univeristy.<br/><br/> 
+                    </p>
+                </div>
+            </div>
+		</div><!--/.row -->
+        <br>
+		<br>
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>OPEN SOURCE</h5>
+            </div>
+            <div class="col-lg-4">
+                <p>Twisted_InfluxDB_Driver</p>
+                <p class="justify"><more>Asynchronous InfluxDB Driver developed for Python Twisted.
+                    <br> Repository created: <a href="https://github.com/vasco-santos/Twisted_InfluxDB_Driver"><i class="icon-github"></i></a>
+                    <br/><br/> 
+                    </p>
+            </div>
+            <div class="col-lg-4">
+                <p>Kademlia</p>
+                <p class="justify"><more>Added Neighborhood discovery to Kademlia Protocol Implementation. 
+                    <br> Repository contributed to: <a href="https://github.com/vasco-santos/kademlia"><i class="icon-github"></i></a>
+                    <br/><br/> 
+                    </p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-3">
+                <p>angular-dropdowns</p>
+                <p class="justify"><more>Included a scrollbar for large lists to the Dropdown implementation.
+                    <br> Repository contributed to: <a href="https://github.com/jseppi/angular-dropdowns"><i class="icon-github"></i></a>
+                    <br/><br/> 
+                    </p>
+            </div>
+            <div class="col-lg-4">
+                <p>DHT-Demo</p>
+                <p class="justify"><more>Fixed in order to allow the Chord ring draw to receive new nodes.
+                    <br> Repository contributed to: <a href="https://github.com/Elderry/DHT-Demo"><i class="icon-github"></i></a>
+                    <br/><br/> 
+                    </p>
+            </div>
         </div>
-        
+		<br>
+		<br>
+	</div><!--/.container -->
+	
 
-        <!-- Experience Section -->
-        <div class="background-lightYellow">
-            <section id="experience" class="container content-section text-center">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2 class="fontGreenBlue">Experience</h2>
-                        <hr class="small hrCustom">
-                    </div>
-                </div>
-                <h3 class="fontGreenBlue">Educations</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4><a href="http://www.ua.pt/">Aveiro University</a></h4>
-                        <p> Sep 2011 - Current</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p align="justify">
-                            <strong>Integrated Masters - Computers and Telematic Engineering</strong><br>
-                            <span>
-                                Provides a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role in the industrial sector and are the main dynamo of development in all advanced economies. </span>
-                            <span>
-                                <span class="glyphicon glyphicon-map-marker"></span>
-                            Aveiro</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4><a href="http://ae1abrantes.esdrsolanoabreu.pt/">Escola Secundária Dr. Solano de Abreu</a></h4>
-                        <p> Sep 2005 - Jul 2011</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p align="justify">
-                            <strong>Scientific and humanistic course of Sciences and Technologies</strong><br>
-                            <span>
-                            Provides a set of knowledge and skills that will help to observe, organize and understand the science and technology, as well as recognize and relate its implications in contemporary society.
-                            </span>
-                            <span>
-                                <span class="glyphicon glyphicon-map-marker"></span>
-                            Abrantes</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4><a href="http://www.ilcourhouse.com/">ILC Our House</a></h4>
-                        <p> Sep 2003 - Jul 2010</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p align="justify">
-                            <strong>English Courses</strong><br>
-                            <span>
-                                Languages school member of the British Council Exams Partnership Programme, recognized as official center for examinations at the University of Cambridge.
-                            </span>
-                            <span>
-                                <span class="glyphicon glyphicon-map-marker"></span>
-                            Abrantes</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <hr class="small hrCustom">
-                    </div>
-                </div>
-                <h3 class="fontGreenBlue">Extracurricular</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>Núcleo de Estudantes de Engenharia de Computadores e Telemática da AAUAv</h4>
-                        <p> Jan 2015 - Dec 2015</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p align="justify">
-                            <strong>Pedagogy Section</strong><br>
-                            <span>
-                                Member of pedagogy section of the course students' union. The main objectives of this section are organizing activities aimed at complementing the education of students and prepare them for the job market.
-                            </span>
-                            <span>
-                                <span class="glyphicon glyphicon-map-marker"></span>
-                            Aveiro</span>
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Others</h4>
-                        <p> Sep 2005 - Aug 2010</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p align="justify">
-                            <span>
-                                Member of the Scouts group of Chainça.<br>
-                                Football player at local team.
-                            </span>
-                            <span>
-                                <span class="glyphicon glyphicon-map-marker"></span>
-                            Abrantes</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
 
-        <!-- Abilities Section -->
-        <section id="abilities" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2 class="fontGreenBlue">Abilities</h2>
-                    <hr class="small">
-                    <!--
-                    CERTIFICATES AND AWARDS
-                    -->
-                </div>
-            </div>
-            
-            <h3 class="fontGreenBlue">Programming Languages</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">Java</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star-empty"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">SQL</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star-empty"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Python</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Javascript</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">C#</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">C++</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                         <li style="clear: both;">
-                            <span class="ability-title">Ruby</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">C</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            
-            <h3 class="fontGreenBlue">Technologies and Protocols</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">JSON</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">XML</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">HTTP</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Sockets and Websockets</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">TCP/IP</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">HTML(5) and CSS(3)</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Security Mechanism</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">MongoDB</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Latex</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">CherryPy</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">AngularJS</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Express.js</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Node.js</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">ReactJS</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">ASP.NET+</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                         <li style="clear: both;">
-                            <span class="ability-title">WPF</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">jQuery</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Apache Solr</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                         <li style="clear: both;">
-                            <span class="ability-title">Kinect SDK</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            
-            <h3 class="fontGreenBlue">Languages</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">Portuguese(Mother tongue)</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">English (Daily use)</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">Spanish (Survivable)</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <hr class="small">
-                </div>
-            </div>
-            <h3 class="fontGreenBlue">Tools</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                        <li style="clear: both;">
-                            <span class="ability-title">SVN</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">GIT</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                                <span class="glyphicon glyphicon-star filled"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Windows</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul style="list-style-type: none;">
-                         <li style="clear: both;">
-                            <span class="ability-title">Linux</span>
-                            <span class="ability-score">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Chrome Developer Tools</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star-empty"></span>                                        
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                        <li style="clear: both;">
-                            <span class="ability-title">Adobe Photoshop</span>
-                            <span class="ability-score">             
-                                <span class="glyphicon glyphicon-star-empty"></span>                                        
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <div class="background-gray" style="margin-top: 50px;">
-            <section id="contact" class="container content-section text-center">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <h2>Contact</h2>
-                        <hr class="small">
-                        <p>Feel free to contact me! I'm currently available to take part in some interesting smaller projects.<br>
+	<section id="contact" name="contact"></section>
+	<!--FOOTER DESCRIPTION -->
+	<div id="footwrap">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>CONTACT</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Email</t><br/>
+						santos.vasco10@gmail.com<br/>
+					</p>
+					<p><t>Address</t><br/>
+						Aveiro, Portugal <br/>
+					</p>
+                    <p>Feel free to contact me! I'm currently available to take part in some interesting smaller projects. 
                         I am also looking for oportunities from any country after finishing my master degree.</p>
-                    </div>
-                    <div class="col-md-4 col-md-offset-2">
-                        <ul style="list-style-type: none;">
-                            <li style="clear: both;">
-                                <a class="ability-title" href="mailto:tp.au@sotnas.ocsav">
-                                    <img src="img/email.png">
-                                    <span style="unicode-bidi:bidi-override; direction: rtl; padding-left:2em;">
-                                        tp.au@sotnas.ocsav</span>
-                                </a>
-                            </li>
-                            <li style="clear: both;">
-                                <a class="ability-title" href="https://pt.linkedin.com/pub/vasco-santos/61/536/555" target="_blank">
-                                    <img src="img/linkedin.png">
-                                    <span style="padding-left:2em;">pt.linkedin.com/pub/vasco-santos</span>
-                                </a>
-                            </li>
-                            <li style="clear: both;">
-                                <a class="ability-title" href="javascript:void(0);">
-                                    <img src="img/skype.png">
-                                    <span style="padding-left:2em;">vasco.santos-ua</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5 col-md-offset">
-                        <ul style="list-style-type: none;">
-                            <li style="clear: both;">
-                                <a class="ability-title" href="https://github.com/vasco-santos" target="_blank">
-                                    <img src="img/github.png">
-                                    <span style="padding-left:2em;">github.com/vasco-santos</span>      
-                                </a>
-                            </li>
-                            <li style="clear: both;">
-                                <a class="ability-title" href="https://www.facebook.com/vasco.santos.107" target="_blank">
-                                    <img src="img/facebook.png">
-                                    <span style="padding-left:2em;">www.facebook.com/vasco.santos.107</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>SOCIAL LINKS</sm></p>
+					<p>
+						<a href="https://github.com/vasco-santos"><i class="icon-github"></i></a>
+                        <a href="https://pt.linkedin.com/in/vascosantos10"><i class="icon-linkedin"></i></a>
+						<a href="https://www.facebook.com/vasco.santos.107"><i class="icon-facebook"></i></a>
+						<a><i class="icon-skype"> vasco.santos-ua</i></a>
+					</p>
+				</div>
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/ #footer -->
+	
+	<div id="c">
+		<div class="container centered">
+			<p>&copy; Vasco Santos 2016</p>		
+		</div>
+	</div>
 
-        <!-- Footer -->
-        <footer class="background-gray text-center">
-            <div class="contaier">
-                <p>&copy; Vasco Santos 2015</p>
-            </div>
-        </footer>
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- Custom Theme JavaScript -->
-        <script src="js/script.js"></script>
+    ga('create', 'UA-79886392-1', 'auto');
+    ga('send', 'pageview');
 
-    </body>
+    </script>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
 </html>
