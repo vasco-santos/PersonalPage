@@ -38,15 +38,15 @@ $(function () {
         },
 
         series: [{
-            name: 'June 2016',
-            data: [75, 80, 55, 65, 60, 90],
+            name: 'October 2016',
+            data: [75, 80, 55, 65, 60, 85],
             pointPlacement: 'on'
         }]
 
     });
     
     // Node JS
-    var doughnutData = [
+    /*var doughnutData = [
         {
             value: 85,
             color:"#1abc9c"
@@ -200,6 +200,58 @@ $(function () {
         }
     ];
     myDoughnut = new Chart(document.getElementById("solr").getContext("2d")).Doughnut(doughnutData, {percentageInnerCutout : 60});
+    */
+    // Object-oriented
+    var doughnutData = [
+        {
+            value: 80,
+            color:"#1abc9c"
+        },
+        {
+            value : 20,
+            color : "#ecf0f1"
+        }
+    ];
+    var myDoughnut = new Chart(document.getElementById("objectOriented").getContext("2d")).Doughnut(doughnutData, {percentageInnerCutout : 60});
+
+    // Async
+    doughnutData = [
+        {
+            value: 75,
+            color:"#1abc9c"
+        },
+        {
+            value : 25,
+            color : "#ecf0f1"
+        }
+    ];
+    myDoughnut = new Chart(document.getElementById("async").getContext("2d")).Doughnut(doughnutData, {percentageInnerCutout : 60});
+
+    // Event Driven
+    doughnutData = [
+        {
+            value: 75,
+            color:"#1abc9c"
+        },
+        {
+            value : 25,
+            color : "#ecf0f1"
+        }
+    ];
+    myDoughnut = new Chart(document.getElementById("eventDriven").getContext("2d")).Doughnut(doughnutData, {percentageInnerCutout : 60});
+
+    // Functional
+    doughnutData = [
+        {
+            value: 60,
+            color:"#1abc9c"
+        },
+        {
+            value : 40,
+            color : "#ecf0f1"
+        }
+    ];
+    myDoughnut = new Chart(document.getElementById("functional").getContext("2d")).Doughnut(doughnutData, {percentageInnerCutout : 60});
 
 
     // Skills Animation
