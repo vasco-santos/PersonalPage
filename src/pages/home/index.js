@@ -29,7 +29,9 @@ class Home extends Component {
                 </div>}
                 <div className={ classNames(styles.profile, { [styles.ready]: pageReady }) }>
                     <OnImagesLoaded className={styles.picture}
-                        onLoaded={ this._handleOnImageLoaded }>
+                        onLoaded={ this._handleOnImageLoaded }
+                        onTimeout={ this._handleOnImageLoaded }
+                        timeout={ 1000 }>
                         <img src={VascoProfile} alt="Project Preview" />
                     </OnImagesLoaded>
                     <div className={styles.info}>
@@ -37,8 +39,8 @@ class Home extends Component {
                             P2P Software Engineer
                         </div>
                         <div className={styles.intro} >
-                            A technology enthusiast driven by the daily challenges of software engineering,
-                            who aspires to build software to make the world a better place.
+                            A <b>technology</b> enthusiast driven by the <b>daily challenges</b> of <b>software engineering</b>,
+                            who aspires to build software to make the <b>world</b> a <b>better place</b>.
                         </div>
                         <SocialMediaList />
                         <div className={styles.ending} >

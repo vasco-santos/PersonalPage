@@ -1,4 +1,5 @@
 @import "shared/styles/imports/variables.css";
+@import "shared/styles/imports/custom-medias.css";
 
 .home {
     & .particles {
@@ -30,12 +31,17 @@
         }
 
         & .picture {
-            margin-bottom: 12px;
-
             & img {
                 width: 220px;
                 height: 220px;
                 border-radius: 100%;
+            }
+
+            @media (--layout-lte-small) {
+                & img {
+                    width: 180px;
+                    height: 180px;
+                }
             }
         }
 
@@ -43,6 +49,7 @@
             margin: 25px 0;
             max-width: 420px;
             text-align: center;
+            line-height: normal;
 
             & .role {
                 font-weight: 900;

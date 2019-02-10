@@ -17,6 +17,12 @@
   justify-content: center;
 }
 
+@media (--layout-lte-small) {
+    .children {
+      padding: var(--side-spacing-small);
+    }
+}
+
 .footer {
   flex: 0 0 auto;
 }

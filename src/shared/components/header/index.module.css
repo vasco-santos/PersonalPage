@@ -12,6 +12,12 @@
         flex: 0 0 var(--side-spacing);
     }
 
+    @media (--layout-lte-small) {
+        & .left {
+            flex: 0 0 var(--side-spacing-small);
+        }
+    }
+
     & .right {
         flex: 1 1 50%;
 
