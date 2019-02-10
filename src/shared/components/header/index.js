@@ -21,7 +21,7 @@ const Header = ({ location }) => (
     </div>
     <div className={ styles.right }>
       <h2>
-        <Link to="/about" className={ styles.link }>
+        <Link to="/" className={ styles.link }>
           { pageTitle(location.pathname) }
         </Link>
       </h2>

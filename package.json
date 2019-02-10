@@ -65,7 +65,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby build && gh-pages -d public -b production",
     "lint": "aegir lint && stylelint \"**/*.css\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
