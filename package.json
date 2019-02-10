@@ -21,6 +21,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "react-loader-spinner": "^2.3.0",
+    "react-on-images-loaded": "^2.2.3",
     "react-particles-js": "^2.4.2"
   },
   "devDependencies": {
@@ -65,7 +67,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "deploy": "gatsby build && gh-pages -d public -b production",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "lint": "aegir lint && stylelint \"**/*.css\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

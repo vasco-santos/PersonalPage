@@ -4,7 +4,7 @@ import { Link as GatsbyLink } from 'gatsby'
 
 class Link extends Component {
     render() {
-        const { to, href, prefixLocale, ...rest } = this.props
+        const { to, href, ...rest } = this.props
 
         if (to) {
             return <GatsbyLink {...rest} to={this.buildTo()} />
@@ -16,14 +16,9 @@ class Link extends Component {
     }
 
     buildTo() {
-        const { to, prefixLocale } = this.props
-        const { intl } = this.context
+        const { to } = this.props
 
         let finalTo = ''
-
-        if (prefixLocale && intl.defaultLocale !== intl.locale) {
-            finalTo += `/${intl.locale}`
-        }
 
         finalTo += to.replace(/\/+$/, '')
         finalTo += '/'
@@ -32,18 +27,9 @@ class Link extends Component {
     }
 }
 
-Link.defaultProps = {
-    prefixLocale: true
-}
-
 Link.propTpes = {
     to: PropTypes.string,
-    href: PropTypes.string,
-    prefixLocale: PropTypes.bool
-}
-
-Link.contextTypes = {
-    intl: PropTypes.object.isRequired
+    href: PropTypes.string
 }
 
 export default Link

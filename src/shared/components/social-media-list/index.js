@@ -25,7 +25,7 @@ const SocialMediaList = ({ orientation }) => (
     <div className={ styles.list }>
         {
             socialLinks.map((item) => (
-                <Link href={ item.href }>
+                <Link key={ item.name } href={ item.href }>
                     <Svg className={ classNames(styles.svg, item.css) } 
                         svg={ item.svg }
                         role="presentation" />
