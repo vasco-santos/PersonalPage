@@ -44,7 +44,7 @@ class Home extends Component {
                         </div>
                         <SocialMediaList />
                         <div className={styles.ending} >
-                            ... and a world traveler in the free time.
+                            ... and a world <b>traveler</b> in the free time.
                         </div>
                     </div>
                 </div>
