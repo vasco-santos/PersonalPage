@@ -1,0 +1,22 @@
+@import "shared/styles/imports/variables.css";
+@import "shared/styles/imports/custom-medias.css";
+
+/* Stretch app to fill our screen height */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.children {
+  display: flex;
+  padding: var(--side-spacing);
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  flex: 0 0 auto;
+}

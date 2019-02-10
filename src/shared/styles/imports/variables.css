@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+:root {
+  --color-dark-grey: #181818;
+  --color-dirty-white: #d4ccb9;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-github: #fff;
+  --color-twitter: #1da1f2;
+  --color-instagram: #8a3ab9;
+  --color-linkedin: #0073b1;
+  --color-spotify: #1db954;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+:root {
+  --typography-display-font: "Montserrat", Verdana, sans-serif;
+  --typography-text-font: "Montserrat", Tahoma, Verdana, sans-serif;
+  --typography-roboto-text-font: "Roboto", sans-serif;
+  --typography-text-size-large: 18px;
+  --typography-text-size: 15px;
+  --typography-text-size-small: 13px;
+  --typography-text-size-xsmall: 12px;
+  --typography-text-size-mobile: 14px;
+  --typography-text-weight-light: 300;
+  --typography-text-weight: 400;
+  --typography-text-weight-semibold: 600;
+  --typography-text-weight-bold: 700;
+}
+
+/* ==========================================================================
+   Constants
+   ========================================================================== */
+
+:root {
+  --container-width: 80%;
+  --container-width-mobile: 89%;
+  --transition-default-duration: 300ms;
+  --max-container-width: 1440px;
+  --header-height-large: 65px;
+  --side-spacing: 65px;
+}

@@ -1,0 +1,26 @@
+@import "shared/styles/imports/variables.css";
+@import "shared/styles/imports/custom-medias.css";
+
+.header {
+    width: 100%;
+    height: var(--header-height-large);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+
+    & .left {
+        flex: 0 0 var(--side-spacing);
+    }
+
+    & .right {
+        flex: 1 1 50%;
+
+        & h2 {
+            margin: 0;
+
+            & .link {
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
