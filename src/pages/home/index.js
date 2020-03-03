@@ -40,7 +40,7 @@ class Home extends Component {
                         </div>
                         <div className={styles.intro} >
                             A <b>technology</b> enthusiast driven by the <b>daily challenges</b> of <b>software engineering</b>,
-                            who aspires to build software to make the <b>world</b> a <b>better place</b>.
+                            who aspires to design software to make the <b>world</b> a <b>better place</b>.
                         </div>
                         <SocialMediaList />
                         <div className={styles.ending} >
